@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katz AI - Admin Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    
+    <link rel="stylesheet" href="/static/css/manager.css">
+</head>
+<body>
+
+    <header>
+        <h1>✨ Katz AI Manager Panel</h1>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tab-link active" data-tab="tab-ai-brain">🧠 AI Brain</button>
+            <button class="tab-link" data-tab="tab-data-manager">📊 Data Sets</button>
+            <button class="tab-link" data-tab="tab-theme-manager">🎨 Theme Manager</button>
+            <button class="tab-link" data-tab="tab-user-manager">👤 User Manager</button>
+        </div>
+
+        <div id="tab-ai-brain" class="tab-content active">
+            <div class="grid-container">
+                <div class="card">
+                    <h2>Add to AI Brain (Knowledge)</h2>
+                    <p>Add facts here. The AI will use this as priority information. (e.g., "Kasi's favorite color is Red.")</p>
+                    <label for="knowledge-input">New Knowledge (one per line):</label>
+                    <textarea id="knowledge-input" class="code-input" placeholder="Katz AI was created by Kasi.&#10;The current year is 2025." rows="8"></textarea>
+                    <button id="add-knowledge-btn" class="save-btn">
+                        <span>Add to Knowledge</span>
+                    </button>
+                </div>
+                
+                <div class="card">
+                    <h2>Add to AI Brain (Instructions)</h2>
+                    <p>Add commands here. The AI will follow these rules. (e.g., "Always be extra polite to users from India.")</p>
+                    <label for="instructions-input">New Instructions (one per line):</label>
+                    <textarea id="instructions-input" class="code-input" placeholder="Never talk about politics.&#10;Always end the conversation with 'Have a great day!'." rows="8"></textarea>
+                    <button id="add-instructions-btn" class="save-btn">
+                        <span>Add to Instructions</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-data-manager" class="tab-content">
+            <div class="grid-container">
+                <div class="card">
+                    <h2>Upload CSV Data Set</h2>
+                    <p>Upload a .csv file to the <code>data_sets</code> folder. The AI will read this data to answer questions.</p>
+                    
+                    <div class="file-input-wrapper">
+                        <label for="csv-file-input" class="file-input-label">
+                            <span>Choose a .csv file</span>
+                        </label>
+                        <input type="file" id="csv-file-input" class="file-input-hidden" accept=".csv">
+                        <span id="csv-file-name" class="file-name-preview">No file selected</span>
+                    </div>
+                    
+                    <button id="upload-csv-btn" class="save-btn">
+                        <span>Upload Data Set</span>
+                    </button>
+                </div>
+                
+                <div class="card">
+                    <h2>Manage Data Sets</h2>
+                    <p>View and delete currently uploaded CSV files from the <code>data_sets</code> folder.</p>
+                    <div id="data-list-loading">Loading data sets...</div>
+                    <div id="data-list-container">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-theme-manager" class="tab-content">
+            <div class="grid-container">
+                <div class="card">
+                    <h2>Add New Theme</h2>
+                    <p>Add a new theme. The <b>Theme ID</b> will be auto-generated from the name. Your CSS <b>must</b> start with this new ID.</p>
+                    
+                    <label for="theme-name-input">Theme Name:</label>
+                    <input type="text" id="theme-name-input" placeholder="e.g., My Custom Theme">
+                    
+                    <label>Generated CSS Selector:</label>
+                    <div class="theme-id-preview">
+                        <strong id="theme-id-preview-text">body.theme-my-custom-theme</strong>
+                    </div>
+                    
+                    <label for="theme-css-input">Theme CSS Code:</label>
+                    <textarea id="theme-css-input" class="code-input" placeholder="body.theme-my-custom-theme {&#10;  --bg-primary: #123456;&#10;  --text-primary: #ffffff;&#10;}" rows="12"></textarea>
+                    
+                    <button id="add-theme-btn" class="save-btn">
+                        <span>Add New Theme</span>
+                    </button>
+                </div>
+                
+                <div class="card">
+                    <h2>Manage Existing Themes</h2>
+                    <p>View and delete custom themes. Default themes cannot be deleted.</p>
+                    <div id="theme-list-loading">Loading themes...</div>
+                    <div id="theme-list-container">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-user-manager" class="tab-content">
+            <div class="card"> <h2>Manage Users</h2>
+                <p>View user details, analyze personality, ban users, or delete user data.</p>
+                <div id="user-list-loading">Loading users...</div>
+                <div id="user-list-container">
+                    </div>
+            </div>
+        </div>
+        </main>
+
+    <div id="toast-notification"></div>
+
+    <div id="confirm-modal-overlay">
+      <div id="confirm-modal-container">
+        <h2 id="confirm-modal-title">Confirm Action</h2>
+        <p id="confirm-modal-message">Are you sure?</p>
+        <div id="confirm-modal-actions">
+          <button id="confirm-modal-btn-cancel" class="modal-btn cancel">Cancel</button>
+          <button id="confirm-modal-btn-confirm" class="modal-btn confirm danger">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div id="user-details-modal-overlay">
+        <div id="user-details-modal-container">
+            <div class="user-details-header">
+                <h2 id="user-details-modal-title">User Details</h2>
+                <button id="user-details-modal-close-btn">&times;</button>
+            </div>
+            <div id="user-details-modal-content">
+                <div class="spinner-full"></div>
+            </div>
+            
+            </div>
+    </div>
+    <script src="/static/js/manager.js?v=20251112"></script>
+</body>
+</html>
