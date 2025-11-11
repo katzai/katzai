@@ -1,0 +1,418 @@
+l<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katz AI Pro Chat</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/static/css/style.css">
+  
+  <link id="dynamic-themes-stylesheet" rel="stylesheet" href="/api/themes/all.css">
+
+</head>
+<body class="theme-dark">
+  
+  <div id="login-overlay" class="auth-overlay">
+    <div class="auth-card">
+      
+      <div class="auth-logo">✨</div>
+      <h1 class="auth-heading">Katz AI Pro</h1>
+      
+      
+      <div id="loginSection" data-section class="auth-view">
+        <p class="auth-subtitle">Sign in to continue</p>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="your@email.com" autocomplete="email">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <div class="input-with-icon">
+            <input type="password" id="loginPassword" class="form-input" placeholder="Enter password" autocomplete="current-password">
+            <button type="button" class="icon-btn" id="eye-signin">
+              <svg class="icon-show" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="icon-hide" style="display:none" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <div style="text-align: right; margin-top: -10px; margin-bottom: 20px;">
+          <a href="#" id="gotoForgot" class="link-switch" style="margin-top: 0; text-align: right; font-size: 13px;">Forgot Password?</a>
+        </div>
+        
+        <button id="loginBtn" class="btn-primary">Sign In</button>
+        
+        <a href="#" id="gotoRegister" class="link-switch">New here? Create account</a>
+      </div>
+      
+      
+      <div id="registerSection" data-section class="auth-view" style="display: none;">
+        <p class="auth-subtitle">Create your account</p>
+        <div class="form-group">
+          <label class="form-label">First Name</label>
+          <input type="text" id="firstName" class="form-input" placeholder="Enter first name" autocomplete="given-name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Last Name</label>
+          <input type="text" id="lastName" class="form-input" placeholder="Enter last name" autocomplete="family-name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" id="registerEmail" class="form-input" placeholder="your@email.com" autocomplete="email">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <div class="input-with-icon">
+            <input type="password" id="registerPassword" class="form-input" placeholder="At least 8 characters" autocomplete="new-password">
+            <button type="button" class="icon-btn" id="eye-signup">
+              <svg class="icon-show" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="icon-hide" style="display:none" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <button id="registerBtn" class="btn-primary">Create Account</button>
+        
+        <a href="#" id="gotoLoginFromRegister" class="link-switch">Already have account? Sign in</a>
+      </div>
+
+      
+      <div id="verifySection" data-section class="auth-view" style="display: none;">
+        <p class="auth-subtitle">Verify your email</p>
+        <p class="auth-subtitle" style="font-size: 14px; margin-top: -20px; margin-bottom: 20px;">An OTP was sent to your email address.</p>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" id="verifyEmail" class="form-input" placeholder="your@email.com" autocomplete="email" readonly style="background: var(--bg-primary);">
+        </div>
+        <div class="form-group">
+          <label class="form-label">OTP Code</label>
+          <input type="text" id="verifyOtp" class="form-input" placeholder="Enter 6-digit OTP" autocomplete="one-time-code">
+        </div>
+        
+        <button id="verifyRegisterBtn" class="btn-primary">Verify & Sign Up</button>
+        
+        <button id="resendOtpBtn" class="link-switch" style="background: none; border: none; width: 100%; color: var(--text-secondary); cursor: pointer;">Resend OTP</button>
+      </div>
+
+      
+      <div id="forgotSection" data-section class="auth-view" style="display: none;">
+        <p class="auth-subtitle">Forgot Password</p>
+        <p class="auth-subtitle" style="font-size: 14px; margin-top: -20px; margin-bottom: 20px;">Enter your email to receive a password reset code.</p>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" id="forgotEmail" class="form-input" placeholder="your@email.com" autocomplete="email">
+        </div>
+        
+        <button id="forgotBtn" class="btn-primary">Send Reset Code</button>
+        
+        <a href="#" id="gotoLoginFromForgot" class="link-switch">Back to Sign In</a>
+      </div>
+      
+      
+      <div id="forgotVerifySection" data-section class="auth-view" style="display: none;">
+        <p class="auth-subtitle">Verify Reset Code</p>
+         <p class="auth-subtitle" style="font-size: 14px; margin-top: -20px; margin-bottom: 20px;">An OTP was sent to your email address.</p>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" id="forgotVerifyEmail" class="form-input" placeholder="your@email.com" autocomplete="email" readonly style="background: var(--bg-primary);">
+        </div>
+        <div class="form-group">
+          <label class="form-label">OTP Code</label>
+          <input type="text" id="forgotVerifyOtp" class="form-input" placeholder="Enter 6-digit OTP" autocomplete="one-time-code">
+        </div>
+        
+        <button id="verifyForgotBtn" class="btn-primary">Verify Code</button>
+      </div>
+      
+      
+      <div id="resetSection" data-section class="auth-view" style="display: none;">
+        <p class="auth-subtitle">Set New Password</p>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" id="resetEmail" class="form-input" placeholder="your@email.com" autocomplete="email" readonly style="background: var(--bg-primary);">
+        </div>
+        <div class="form-group">
+          <label class="form-label">OTP Code</label>
+          <input type="text" id="resetOtp" class="form-input" placeholder="Enter 6-digit OTP from email" autocomplete="one-time-code">
+        </div>
+        <div class="form-group">
+          <label class="form-label">New Password</label>
+          <div class="input-with-icon">
+            <input type="password" id="resetNewPassword" class="form-input" placeholder="At least 8 characters" autocomplete="new-password">
+            <button type="button" class="icon-btn" id="eye-reset">
+              <svg class="icon-show" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="icon-hide" style="display:none" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <button id="resetBtn" class="btn-primary">Reset Password</button>
+      </div>
+      
+      
+      <div id="msg-error" class="msg-box error"></div>
+      <div id="msg-success" class="msg-box success"></div>
+      
+    </div>
+  </div>
+
+  
+  <div id="chatSection" style="display:none;">
+
+  
+  <div id="sidebar">
+    <div id="sidebar-profile">
+      <div id="sidebar-profile-label">Welcome</div>
+      <div id="sidebar-user-name" title="User ID: Loading...">Loading...</div>
+    </div>
+    <button id="new-chat-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      New Chat
+    </button>
+    
+    <div id="search-bar-container">
+      <input type="text" id="search-bar" placeholder="Search chats..." autocomplete="off">
+    </div>
+    
+    <div id="sidebar-header" style="margin-top: 5px;">Chat History</div>
+    <div id="session-list-container"></div>
+  </div>
+  <div id="sidebar-overlay"></div>
+  
+  
+  <div id="settings-panel">
+    <div class="settings-header">
+      <span>Settings</span>
+      <button class="header-btn" id="settings-close-btn" style="width: 40px; height: 40px;" title="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="settings-body">
+    
+      
+      <div class="settings-group" id="theme-settings-group">
+        <div class="settings-group-header" data-group="theme">
+          <h3>Theme</h3>
+          <svg class="settings-group-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+        <div class="settings-group-content">
+          <div class="theme-selector" id="theme-selector-container">
+            
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="settings-group" id="voice-settings-group">
+        <div class="settings-group-header" data-group="voice">
+          <h3>Voice</h3>
+          <svg class="settings-group-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+        <div class="settings-group-content">
+        
+          <div class="settings-section">
+            <label class="settings-label">AI Voice</label>
+            <button class="tts-capsule-btn" id="tts-toggle-btn" data-tts-state="on" title="Toggle AI Voice">
+              <div class="tts-capsule-track"></div>
+              <div class="tts-capsule-thumb">
+                <svg class="icon-mute" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+                <svg class="icon-unmute" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+              </div>
+              <span class="tts-state-label-on">ON</span>
+              <span class="tts-state-label-off">OFF</span>
+            </button>
+          </div>
+        
+          <div class="settings-section">
+            <label class="settings-label">Voice Model</label>
+            <div class="custom-select-wrapper" id="voice-select-wrapper">
+              <div class="custom-select" id="voice-select-display">
+                <span id="voice-select-label">Default</span>
+                <svg class="custom-select-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="custom-select-options" id="voice-select-options">
+                <div class="custom-option" data-value="default">Default</div>
+                <div class="custom-option" data-value="en-US-Standard-A">Male (US, A)</div>
+                <div class="custom-option" data-value="en-US-Standard-B">Male (US, B)</div>
+                <div class="custom-option" data-value="en-US-Standard-C">Female (US, C)</div>
+                <div class="custom-option" data-value="en-GB-Standard-A">Male (UK)</div>
+                <div class="custom-option" data-value="en-GB-Standard-B">Female (UK)</div>
+                <div class="custom-option" data-value="en-AU-Standard-A">Male (AU)</div>
+                <div class="custom-option" data-value="en-AU-Standard-B">Female (AU)</div>
+              </div>
+            </div>
+            <select id="voice-model-select-hidden" style="display: none;">
+              <option value="default">Default</option>
+              <option value="en-US-Standard-A">Male (US, A)</option>
+              <option value="en-US-Standard-B">Male (US, B)</option>
+              <option value="en-US-Standard-C">Female (US, C)</option>
+              <option value="en-GB-Standard-A">Male (UK)</option>
+              <option value="en-GB-Standard-B">Female (UK)</option>
+              <option value="en-AU-Standard-A">Male (AU)</option>
+              <option value="en-AU-Standard-B">Female (AU)</option>
+            </select>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      <div class="settings-group" id="controls-settings-group">
+        <div class="settings-group-header" data-group="controls">
+          <h3>Controls</h3>
+          <svg class="settings-group-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+        <div class="settings-group-content">
+
+          <div class="settings-section">
+             <button id="exportAllPdfBtn" class="btn-secondary" style="width: 100%;">Export All Chats as PDF</button>
+          </div>
+          <div class="settings-section">
+             <button id="logoutBtn" class="btn-danger" style="width: 100%;">Log Out</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="settings-overlay"></div>
+   
+  
+  <div class="app-layout">
+    <div class="chat-container">
+      <div class="chat-header">
+        
+        <button class="header-btn" id="menu-toggle-btn" title="Toggle Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      
+        <div class="header-center">
+          <div class="header-title">✨ Katz AI Pro Chat</div>
+        </div>
+        
+        <button class="header-btn" id="settings-toggle-btn" title="Toggle Settings">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </button>
+        
+      </div>
+      
+      <div class="chat-body" id="chatBody"></div> 
+      
+      <div class="chat-footer">
+        
+        <div id="attachment-menu">
+          <button id="mode-image-btn" class="attachment-option">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.S" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            <span>Generate Image</span>
+          </button>
+          <button id="upload-image-btn" class="attachment-option">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 13a8 8 0 1 1-4.04-6.91"></path><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path><path d="M17 17a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2z"></path></svg>
+            <span>Upload Image/Camera</span>
+          </button>
+          <button id="mode-chat-btn" class="attachment-option">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Back to Chat</span>
+          </button>
+        </div>
+
+        <button class="chat-footer-btn" id="attachment-btn" title="Attachments">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+        </button>
+        
+        <button class="chat-footer-btn" id="mic-button" title="Send Voice Message (STT)">
+          <svg id="icon-mic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line>
+          </svg>
+          <svg id="icon-mic-stop" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+          </svg>
+        </button>
+        
+        <div id="text-input-wrapper">
+          <div id="image-preview-container">
+            <img id="image-preview-thumb" src="" alt="Image Preview">
+            <button id="image-preview-remove" title="Remove Image">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          
+          <textarea id="text-input" placeholder="Type your message..." rows="1" autocomplete="off"></textarea>
+        </div>
+        
+        <button class="chat-footer-btn" id="submit-button" title="Send">
+          <svg id="icon-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2 .01 7z"/>
+          </svg>
+          <svg id="icon-stop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <rect x="6" y="6" width="12" height="12" rx="2"></rect>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="modal-overlay">
+    <div id="modal-container">
+      <h2 id="modal-title">Modal Title</h2>
+      <p id="modal-message">This is the modal message.</p>
+      <input type="text" id="modal-input" style="display: none;" autocomplete="off">
+      <div id="modal-actions">
+        <button id="modal-btn-cancel">Cancel</button>
+        <button id="modal-btn-confirm">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="image-viewer-modal">
+    <span id="image-viewer-close">&times;</span>
+    <img id="image-viewer-content" src="">
+  </div>
+  
+  <input type="file" id="image-upload-input" accept="image/*" style="display: none;">
+
+  <div id="ban-overlay">
+    <div id="ban-container">
+      <h1 id="ban-title">YOU GOT ADMIN BAN</h1>
+      <p id="ban-subtitle">Your account has been banned.</p>
+      <p id="ban-message">You are no longer permitted to access this service. If you believe this is a mistake, please contact the administrator @kascyhh.</p>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="/static/js/script.js?v=20251113"></script>
+  
+</body>
+</html>
