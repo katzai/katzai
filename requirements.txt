@@ -2,3 +2,9 @@ Flask==3.0.0
 user-agents==2.2.0
 Werkzeug==3.0.1
 gunicorn==21.2.0
+Flask-Cors
+requests
+itsdangerous
+Jinja2
+Werkzeug
+email-validator
