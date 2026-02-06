@@ -1,48 +1,31 @@
-# 💫 About Me:
-Welcome to my profile <br>Im Kasinathan P S <br>from SHORANUR, Palakkad, Kerala <br>im a small developer my first developing journey started from my 10th and now im a 1st year BCA student in Nehru Arts And Science College Lakkidi Palakkad Kerala and im using Ai tools for my developing and my aim is to make an amount of money that HUMANITY didn't even saw from my skills and willpower so support guys,
+<h1 align="center">Hi 👋, I'm Kasinathan</h1>
+<h3 align="center">A small developer from kerala</h3>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=katzai&label=Profile%20views&color=0e75b6&style=flat" alt="katzai" /> </p>
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/kas1ee) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/kasinathan-p-s-a53174352) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:pskasinathan1@gmail.com) 
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=katzai" alt="katzai" /></a> </p>
 
-# 💻 Tech Stack:
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-# 📊 GitHub Stats:
-<div align="center">
-  
-![](https://github-readme-stats.vercel.app/api?username=katzai&theme=radical&hide_border=true&include_all_commits=true&count_private=true)
+- My LinkedIn [https://www.linkedin.com/in/kasinathan-p-s-a53174352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app](https://www.linkedin.com/in/kasinathan-p-s-a53174352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=katzai&theme=radical&hide_border=true)
+- My Instagram **https://www.instagram.com/kas1ee?igsh=eTZybTYyN21od2xr**
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=katzai&theme=radical&hide_border=true&include_all_commits=true&count_private=true&layout=compact)
+- 📫 How to reach me **pskasinathan1@gmail.com**
 
-</div>
+- ⚡ Fun fact **I think im cooking something**
 
-## 🏆 GitHub Trophies
-<div align="center">
-  
-![](https://github-profile-trophy.vercel.app/?username=katzai&theme=radical&no-frame=true&no-bg=false&margin-w=4&row=1)
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/kasinathan-p-s-a53174352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/kasinathan-p-s-a53174352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" height="30" width="40" /></a>
+<a href="https://instagram.com/kas1ee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="kas1ee" height="30" width="40" /></a>
+</p>
 
-</div>
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
 
-### ✍️ Random Dev Quote
-<div align="center">
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=katzai&show_icons=true&locale=en&layout=compact" alt="katzai" /></p>
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=katzai&show_icons=true&locale=en" alt="katzai" /></p>
 
-</div>
-
-### 🔝 Top Contributed Repo
-<div align="center">
-  
-![](https://github-contributor-stats.vercel.app/api?username=katzai&limit=5&theme=radical&combine_all_yearly_contributions=true)
-
-</div>
-
----
-<div align="center">
-
-[![](https://visitcount.itsvg.in/api?id=katzai&icon=0&color=0)](https://visitcount.itsvg.in)
-
-</div>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=katzai&" alt="katzai" /></p>
