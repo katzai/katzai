@@ -6,7 +6,7 @@ I'm **Kasinathan P S**
 
 I’m a small developer. My development journey started in 10th grade, and now I’m a **1st year BCA student** at **Nehru Arts and Science College, Lakkidi, Palakkad**.
 
-I use **AI tools** in my development workflow, and my aim is to build skills and systems strong enough to create results that speak for themselves.
+I use **AI tools** in my development workflow, focusing on building strong fundamentals and consistency.
 
 ---
 
@@ -26,29 +26,23 @@ I use **AI tools** in my development workflow, and my aim is to build skills and
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=katzai&show_icons=true&theme=dark&hide_border=false)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=katzai&show_icons=true&theme=dark)
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=katzai&theme=dark&hide_border=false)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=katzai&theme=dark)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=katzai&layout=compact&theme=dark&hide_border=false)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=katzai&layout=compact&theme=dark)
 
 ---
 
 ## 🏆 GitHub Trophies
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=katzai&theme=radical&no-frame=true&margin-w=10)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=katzai&theme=radical&no-frame=true)
 
 ---
 
 ## ✍️ Random Dev Quote
 
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
----
-
-## 🔝 Top Contributed Repositories
-
-![Contributor Stats](https://github-contributor-stats.vercel.app/api?username=katzai&theme=dark)
+![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
 
