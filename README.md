@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=gradient&customColorList=6,10,12&text=Hi%20There,%20I'm%20Your%20Name&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20AI%2FML%20Engineer%20%7C%20Full%20Stack%20Developer&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=gradient&customColorList=6,10,12&text=Hi,%20I'm%20Katz&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20%26%20Full-Stack%20Developer%20%E2%80%94%20Building%20Intelligent%20Software&descAlignY=58&descSize=19" width="100%"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=A78BFA&center=true&vCenter=true&width=650&lines=Building+Scalable+Systems+%7C+Software+Engineer;AI+%2F+ML+Engineer+%7C+Full+Stack+Developer;Turning+Ideas+Into+Production-Grade+Products;Open+Source+Contributor+%7C+Lifelong+Learner" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=3200&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=AI+%26+Software+Developer;Building+LLM+Infrastructure+%26+AI+Agents;Creator+of+Katz+Router+%2F+Katz+AI+%2F+Oreo+AI;Turning+Ambitious+Ideas+Into+Practical+Products;Premium+Dark+UI+%C2%B7+Glassmorphism+%C2%B7+Futuristic+Design" alt="Typing SVG" />
 </a>
 
-<br/>
+<br/><br/>
 
-<img src="https://img.shields.io/badge/B.Tech-Computer%20Science-6D28D9?style=for-the-badge&logo=googlescholar&logoColor=white" />
-<img src="https://img.shields.io/badge/CGPA-9.0%2F10-7C3AED?style=for-the-badge&logo=bookstack&logoColor=white" />
-<img src="https://img.shields.io/badge/Location-India-8B5CF6?style=for-the-badge&logo=googlemaps&logoColor=white" />
+<img src="https://img.shields.io/badge/Focus-AI%20%26%20Software%20Development-6D28D9?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Type-AI--Focused%20Full--Stack%20Developer-7C3AED?style=for-the-badge&logo=react&logoColor=white" />
+<img src="https://img.shields.io/badge/Building-AI%20Powered%20Software-8B5CF6?style=for-the-badge&logo=sparkfun&logoColor=white" />
 
 <br/><br/>
 
@@ -37,56 +37,157 @@
 
 <br/>
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/213910845-af37a709-8995-40d6-be59-724526e3c3d7.gif" width="100%">
+</p>
+
 ---
 
 ## 🧠 About Me
 
-<img align="right" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="360">
+<img align="right" src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="340">
 
 ```yaml
-engineer:
-  name: "Your Name"
-  role: "Software Engineer · AI/ML Engineer · Full Stack Developer"
-  focus:
-    - Designing scalable, distributed backend systems
-    - Building production-grade AI/ML pipelines
-    - Crafting performant, accessible full-stack products
-    - Translating ambiguous problems into shipped features
-  philosophy: >
-    I build software with an obsession for correctness, performance,
-    and long-term maintainability — treating every system like it
-    will run in production at scale from day one.
+profile:
+  name: "Katz"
+  brand: "Katz"
+  primary_focus: "AI & Software Development"
+  developer_type: "AI-Focused Full-Stack / Software Developer"
+  interests:
+    - Artificial Intelligence & LLMs
+    - Developer Tools & Automation
+    - Desktop Applications
+    - Modern Web Applications
+  current_focus: >
+    Building practical AI-powered software and
+    open-source developer tools.
 ```
 
-I'm a software engineer specializing in **backend architecture**, **applied machine learning**, and **full-stack product engineering**. I care deeply about clean abstractions, measurable performance, and shipping software that survives contact with real users.
+> **AI & Full-Stack Developer building intelligent software, LLM infrastructure, automation tools, and modern developer experiences.**
+>
+> *I build AI-powered software that turns ambitious ideas into practical products.*
 
-My work spans REST/GraphQL services, distributed data pipelines, ML model deployment, and modern frontend engineering — with a product mindset that keeps every technical decision tied back to user and business impact.
-
-**🎯 Open To:** Software Engineering roles · AI/ML Engineering roles · Backend/Full-Stack opportunities · Open-source collaboration · Technical mentorship
+I design and ship software at the intersection of **AI** and **full-stack engineering** — from LLM routing infrastructure to voice-driven AI assistants to polished, glassmorphic web and desktop applications. My work centers on making powerful AI models practical, accessible, and genuinely useful inside real developer and student workflows.
 
 <br/>
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Main Projects
+
+<details open>
+<summary><b>🔹 Katz Router — Open-Source LLM Routing Platform</b></summary>
+<br/>
+
+An open-source routing layer that connects applications and coding tools to multiple AI models and providers through a single, unified interface.
+
+| Attribute | Details |
+|---|---|
+| **Purpose** | Unified access layer for multiple AI models/providers |
+| **API Design** | OpenAI-compatible API architecture |
+| **Reliability** | Model fallback & automatic model-selection logic |
+| **Architecture** | Local server + dashboard for monitoring and control |
+| **Impact** | Makes powerful AI models easier to access from developer workflows |
+| **Repository** | [github.com/katzai/katz-router](https://github.com/katzai/katz-router) |
+
+</details>
+
+<details>
+<summary><b>🔹 Katz — AI Assistant</b></summary>
+<br/>
+
+A personal AI assistant built in Python, designed around voice interaction, automation, computer control, and developer assistance — powered by modern Gemini AI capabilities.
+
+| Attribute | Details |
+|---|---|
+| **Stack** | Python, Gemini AI |
+| **Interaction** | Voice-driven commands & natural conversation |
+| **Automation** | App launching, system monitoring, device-related automation |
+| **Capabilities** | Web search, browser control, file management, YouTube interaction, code assistance, desktop control |
+| **Impact** | Hands-free AI-powered control over everyday computing tasks |
+| **Repository** | [github.com/katzai/katz-ai-assistant](https://github.com/katzai/katz-ai-assistant) |
+
+</details>
+
+<details>
+<summary><b>🔹 Oreo AI — Modern AI Chat Application</b></summary>
+<br/>
+
+An AI application built with React + Vite, focused on delivering a premium AI-chat experience with authentication, multi-provider model selection, and reusable UI components.
+
+| Attribute | Details |
+|---|---|
+| **Stack** | React, Vite, JavaScript/TypeScript |
+| **Core Features** | Authentication, model selection, multi-provider AI integration |
+| **UI/UX** | Reusable component library, modern AI-chat experience |
+| **Design Direction** | Premium dark UI, glassmorphism, modern visual effects |
+| **Repository** | [github.com/katzai/oreo-ai](https://github.com/katzai/oreo-ai) |
+
+</details>
+
+<details>
+<summary><b>🔹 AI Education Platform — Desktop Study Companion</b></summary>
+<br/>
+
+An open-source Electron desktop platform for students, built around the University of Calicut BCA Honours syllabus, with AI-driven study planning and course guidance.
+
+| Attribute | Details |
+|---|---|
+| **Stack** | Electron, React/Vite, Local Backend, SQLite, AI/LLM Integration |
+| **AI Capabilities** | Syllabus-based study planning, course recommendations, elective selection |
+| **Learning Tools** | Progress tracking, structured learning roadmaps |
+| **Content Discovery** | Finds long-form, free YouTube courses matched to the syllabus |
+| **AI Techniques** | Retrieval & structured prompting |
+| **Repository** | [github.com/katzai/ai-education-platform](https://github.com/katzai/ai-education-platform) |
+
+</details>
+
+<br/>
+
+---
+
+## 🛠️ Technical Skills
 
 <div align="center">
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,java,cpp,js,ts,go&theme=dark" />
+<img src="https://skillicons.dev/icons?i=python,js,ts,html,css,md&theme=dark" />
 
 **Frontend**
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,html,css&theme=dark" />
+<img src="https://skillicons.dev/icons?i=react,vite&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/Modern%20Responsive%20UI-6D28D9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Glassmorphism-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Dark%20%2F%20Light%20Themes-8B5CF6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Component--Based%20Architecture-A78BFA?style=for-the-badge" />
 
-**Backend & Databases**
+**Desktop / Backend**
 
-<img src="https://skillicons.dev/icons?i=nodejs,express,django,fastapi,postgres,mongodb,redis,graphql&theme=dark" />
+<img src="https://skillicons.dev/icons?i=electron,python,nodejs,sqlite&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/Local%20Servers-6D28D9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/REST%20APIs-7C3AED?style=for-the-badge" />
 
-**Cloud, DevOps & Tooling**
+**AI / LLM**
 
-<img src="https://skillicons.dev/icons?i=aws,gcp,docker,kubernetes,githubactions,terraform,git,linux&theme=dark" />
+<img src="https://img.shields.io/badge/LLM%20APIs-6D28D9?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/AI%20Model%20Routing-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/OpenAI--Compatible%20APIs-8B5CF6?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Gemini-A78BFA?style=for-the-badge&logo=googlegemini&logoColor=white" />
+<img src="https://img.shields.io/badge/Prompt%20Engineering-6D28D9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Model%20Fallback%20Systems-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/AI%20Agents-8B5CF6?style=for-the-badge" />
+<img src="https://img.shields.io/badge/AI%20Automation-A78BFA?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Retrieval%20%2F%20Structured%20Prompting-6D28D9?style=for-the-badge" />
+
+**Developer Tools**
+
+<img src="https://skillicons.dev/icons?i=git,github,npm,powershell&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/API%20Integrations-7C3AED?style=for-the-badge" />
+<img src="https://img.shields.io/badge/CLI--Based%20Development-8B5CF6?style=for-the-badge" />
 
 </div>
 
@@ -94,18 +195,24 @@ My work spans REST/GraphQL services, distributed data pipelines, ML model deploy
 
 ---
 
-## 🤖 AI / ML Expertise
+## 🎨 Design Style
 
 <div align="center">
 
-| Domain | Proficiency | Details |
-|---|:---:|---|
-| **Machine Learning** | ⭐⭐⭐⭐⭐ | Scikit-learn, XGBoost, feature engineering, model evaluation |
-| **Deep Learning** | ⭐⭐⭐⭐☆ | PyTorch, TensorFlow, CNNs, RNNs/LSTMs, Transformers |
-| **NLP** | ⭐⭐⭐⭐☆ | Hugging Face, embeddings, fine-tuning, RAG pipelines |
-| **MLOps** | ⭐⭐⭐⭐☆ | Model serving, MLflow, CI/CD for ML, monitoring & drift detection |
-| **Data Engineering** | ⭐⭐⭐⭐☆ | ETL pipelines, Spark, Airflow, data warehousing |
-| **Computer Vision** | ⭐⭐⭐☆☆ | OpenCV, image classification, object detection |
+<img src="https://img.shields.io/badge/Premium%20Dark%20UI-0D1117?style=for-the-badge&logo=darkreader&logoColor=A78BFA" />
+<img src="https://img.shields.io/badge/Glassmorphism-1e1b2e?style=for-the-badge&logo=fluent&logoColor=8B5CF6" />
+<img src="https://img.shields.io/badge/Modern%20Developer%20Aesthetic-1e1b2e?style=for-the-badge&logo=framer&logoColor=A78BFA" />
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Glass%20Cards-6D28D9?style=flat-square" />
+<img src="https://img.shields.io/badge/Gradients-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Rounded%20UI-8B5CF6?style=flat-square" />
+<img src="https://img.shields.io/badge/Smooth%20Animations-A78BFA?style=flat-square" />
+<img src="https://img.shields.io/badge/Premium%20Dashboards-6D28D9?style=flat-square" />
+<img src="https://img.shields.io/badge/Modern%20Typography-7C3AED?style=flat-square" />
+<img src="https://img.shields.io/badge/Neurobrutalism%20Elements-8B5CF6?style=flat-square" />
+<img src="https://img.shields.io/badge/Futuristic%20AI%20Interfaces-A78BFA?style=flat-square" />
 
 </div>
 
@@ -113,158 +220,11 @@ My work spans REST/GraphQL services, distributed data pipelines, ML model deploy
 
 ---
 
-## 🚀 Featured Projects
-
-<details open>
-<summary><b>🔹 Project One — Distributed Task Orchestration Platform</b></summary>
-<br/>
-
-A distributed, fault-tolerant task orchestration system designed to schedule, execute, and monitor thousands of concurrent background jobs with automatic retry and dead-letter handling.
-
-| Attribute | Details |
-|---|---|
-| **Stack** | Go, PostgreSQL, Redis, Kafka, Docker, Kubernetes |
-| **Scale** | 50K+ jobs/day across distributed worker nodes |
-| **Performance** | p99 job dispatch latency under 80ms |
-| **Security** | JWT auth, role-based access control, encrypted secrets at rest |
-| **Impact** | Reduced job failure recovery time by 70% |
-| **Repository** | [github.com/katzai/project-one](https://github.com/katzai/project-one) |
-
-Built to solve reliability gaps in ad-hoc cron scheduling, this platform introduces idempotent job execution, exponential backoff retries, and real-time observability dashboards — enabling engineering teams to trust asynchronous workflows in production.
-
-</details>
-
-<details>
-<summary><b>🔹 Project Two — AI-Powered Document Intelligence Engine</b></summary>
-<br/>
-
-An end-to-end pipeline that ingests unstructured documents, extracts structured data using fine-tuned transformer models, and exposes insights through a searchable API.
-
-| Attribute | Details |
-|---|---|
-| **Stack** | Python, FastAPI, PyTorch, Hugging Face, Elasticsearch, AWS S3 |
-| **Scale** | Processes 10K+ documents/day |
-| **Performance** | Sub-second semantic search across millions of indexed chunks |
-| **Security** | Tenant-isolated storage, signed URLs, PII redaction pipeline |
-| **Impact** | Cut manual document review time by 85% |
-| **Repository** | [github.com/katzai/project-two](https://github.com/katzai/project-two) |
-
-Combines OCR, embedding-based retrieval, and a fine-tuned classification model to automate what was previously a fully manual document triage workflow.
-
-</details>
-
-<details>
-<summary><b>🔹 Project Three — Real-Time Analytics Dashboard</b></summary>
-<br/>
-
-A full-stack analytics platform delivering real-time metrics visualization for product and engineering teams via WebSocket-driven live updates.
-
-| Attribute | Details |
-|---|---|
-| **Stack** | React, Next.js, Node.js, GraphQL, TimescaleDB, WebSockets |
-| **Scale** | Serves 200+ internal dashboards concurrently |
-| **Performance** | Live data refresh under 250ms end-to-end |
-| **Security** | OAuth2 SSO, granular dashboard-level permissions |
-| **Impact** | Enabled data-driven decisions across 5 product teams |
-| **Repository** | [github.com/katzai/project-three](https://github.com/katzai/project-three) |
-
-Designed with a component-driven architecture and a custom charting layer optimized for high-frequency data streams without UI jank.
-
-</details>
-
-<br/>
-
----
-
-## 💼 Experience
-
-### Software Engineer
-**Company Name** &nbsp;|&nbsp; *Jan 2024 — Present*
-
-Designing and building backend services and ML-driven features for a product used by thousands of active users.
-
-- Architected microservices handling core business logic, reducing average response latency by 40%
-- Led migration from monolith to event-driven architecture using Kafka
-- Built and deployed ML models for recommendation and anomaly detection
-- Mentored 2 junior engineers on system design and code quality practices
-
-`Python` `Go` `Kafka` `PostgreSQL` `AWS` `Docker` `Kubernetes`
-
-<br/>
-
-### Software Engineering Intern
-**Company Name** &nbsp;|&nbsp; *May 2023 — Aug 2023*
-
-Contributed to full-stack feature development within an agile engineering team.
-
-- Shipped 3 customer-facing features from design to production
-- Improved test coverage of core modules from 60% to 92%
-- Optimized database queries, cutting average API latency by 35%
-
-`React` `Node.js` `MongoDB` `Jest` `CI/CD`
-
-<br/>
-
----
-
-## 🏆 Achievements
+## 📌 Skills at a Glance
 
 <div align="center">
 
-| Recognition | Details |
-|---|---|
-| 🥇 **Hackathon Winner** | 1st place at [Hackathon Name] among 500+ participants |
-| 🌟 **Open Source Contributor** | 20+ merged PRs across community projects |
-| 📜 **Research Publication** | Co-authored paper on applied ML, published at [Conference/Journal] |
-| 🎓 **Academic Excellence** | Ranked in top 1% of graduating class |
-| 💡 **Patent Filed** | Filed provisional patent for [invention/system] |
-
-</div>
-
-<br/>
-
----
-
-## 📜 Certifications
-
-**AWS**
-
-<img src="https://img.shields.io/badge/AWS%20Certified%20Solutions%20Architect-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900" />
-<img src="https://img.shields.io/badge/AWS%20Certified%20Developer-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900" />
-
-**Oracle**
-
-<img src="https://img.shields.io/badge/Oracle%20Certified%20Professional-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
-
-**NPTEL**
-
-<img src="https://img.shields.io/badge/NPTEL-Machine%20Learning-6D28D9?style=for-the-badge&logo=googlescholar&logoColor=white" />
-<img src="https://img.shields.io/badge/NPTEL-Data%20Structures-6D28D9?style=for-the-badge&logo=googlescholar&logoColor=white" />
-
-**Cisco**
-
-<img src="https://img.shields.io/badge/Cisco%20CCNA-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" />
-
-<br/>
-
----
-
-## 💻 Coding Profiles
-
-<div align="center">
-
-<a href="https://leetcode.com/katzai">
-  <img src="https://img.shields.io/badge/LeetCode-500%2B%20Solved-6D28D9?style=for-the-badge&logo=leetcode&logoColor=FFA116" />
-</a>
-<a href="https://www.geeksforgeeks.org/user/katzai">
-  <img src="https://img.shields.io/badge/GeeksforGeeks-Institute%20Rank-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
-</a>
-<a href="https://www.hackerrank.com/katzai">
-  <img src="https://img.shields.io/badge/HackerRank-5%20Star-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" />
-</a>
-<a href="https://www.codechef.com/users/katzai">
-  <img src="https://img.shields.io/badge/CodeChef-4%20Star-5B4638?style=for-the-badge&logo=codechef&logoColor=white" />
-</a>
+`Python` · `TypeScript` · `JavaScript` · `React` · `Vite` · `Electron` · `Node.js` · `SQLite` · `REST APIs` · `LLMs` · `Gemini` · `AI Agents` · `Prompt Engineering` · `Git` · `GitHub`
 
 </div>
 
@@ -329,21 +289,19 @@ Contributed to full-stack feature development within an agile engineering team.
 
 ```yaml
 current_focus:
-  learning:
-    - Distributed systems design at scale
-    - Large Language Model fine-tuning & RAG architectures
-    - Advanced Kubernetes orchestration patterns
   building:
-    - An open-source developer productivity tool
-    - A production-grade ML model serving framework
+    - Katz Router — open-source LLM routing platform
+    - Katz — AI assistant with voice, automation & desktop control
+    - Oreo AI — premium AI-chat application
+    - AI Education Platform — AI-driven desktop study companion
   exploring:
-    - Vector databases and semantic search infrastructure
-    - Edge computing for low-latency ML inference
+    - AI agent architectures & multi-model orchestration
+    - Retrieval-augmented, structured prompting systems
+    - Glassmorphic, futuristic AI interface design
   open_to:
-    - Software Engineering (Backend / Full-Stack) roles
-    - AI/ML Engineering roles
+    - AI Engineering & Full-Stack Developer roles
     - Open-source collaboration
-    - Technical writing & mentorship
+    - Building practical AI-powered developer tools
 ```
 
 <br/>
@@ -375,7 +333,7 @@ current_focus:
 
 <div align="center">
 
-*"Code is easy to write and hard to maintain — I optimize for the second part."*
+*"I build AI-powered software that turns ambitious ideas into practical products."*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&customColorList=6,10,12&section=footer&animation=fadeIn" width="100%"/>
 
